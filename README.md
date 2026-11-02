@@ -2,7 +2,8 @@
 
 Download the bash script and run it:
 
-bash install_R.sh
+bash install_R.sh 
+
 You will have to provide your sudo credentilas when prompted
 
 The scripts executes the following steps:
