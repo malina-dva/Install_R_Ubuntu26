@@ -4,22 +4,27 @@
 set -e
 
 echo "======================================"
-echo " Installing R on Ubuntu 26.04"
+echo " Installing R on Ubuntu "
 echo "======================================"
 
-# Check Ubuntu version
-if ! grep -q 'VERSION_ID="26.04"' /etc/os-release; then
-    echo "This script is intended for Ubuntu 26.04."
-    exit 1
-fi
+# Display Ubuntu version
+. /etc/os-release
+
+echo "Detected operating system: $PRETTY_NAME"
 
 # Check architecture
+echo "Checking system architecture..."
+
 ARCH=$(dpkg --print-architecture)
+
+echo "Detected system architecture: $ARCH"
 
 if [[ "$ARCH" != "amd64" && "$ARCH" != "arm64" ]]; then
     echo "Unsupported architecture: $ARCH"
     exit 1
 fi
+
+echo "Architecture is supported."
 
 # Update package lists
 echo "Updating Ubuntu packages..."
