@@ -52,7 +52,7 @@ sudo chmod 644 /etc/apt/keyrings/cran-ubuntu-keyring.gpg
 # Add official CRAN repository
 echo "Adding CRAN repository..."
 
-echo "deb [arch=${ARCH} signed-by=/etc/apt/keyrings/cran-ubuntu-keyring.gpg] https://cloud.r-project.org/bin/linux/ubuntu resolute-cran40/" \
+echo "deb [arch=${ARCH} signed-by=/etc/apt/keyrings/cran-ubuntu-keyring.gpg] https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/" \
     | sudo tee /etc/apt/sources.list.d/cran-r.list > /dev/null
 
 # Update package lists
