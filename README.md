@@ -5,7 +5,7 @@
 Download the installation script and execute it from your terminal:
 
 ```bash
-bash install_R.sh
+sudo bash install_R.sh
 ```
 
 Enter your `sudo` password when prompted.
