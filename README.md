@@ -12,7 +12,7 @@ Enter your `sudo` password when prompted.
 
 The script automatically performs the following steps:
 
-1. Adds the official CRAN repository for Ubuntu 26.04.
+1. Adds the official CRAN repository for Ubuntu (Your version).
 2. Installs the CRAN signing key.
 3. Installs R and the required development tools.
 4. Installs common system libraries required for compiling R packages.
