@@ -79,7 +79,8 @@ sudo apt install -y \
     zlib1g-dev \
     libicu-dev \
     libharfbuzz-dev \
-    libfribidi-dev
+    libfribidi-dev \
+    libuv1-dev
 
 # Verify installation
 echo "======================================"
