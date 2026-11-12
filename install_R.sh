@@ -80,7 +80,8 @@ sudo apt install -y \
     libicu-dev \
     libharfbuzz-dev \
     libfribidi-dev \
-    libuv1-dev
+    libuv1-dev \
+    libgsl-dev
 
 # Verify installation
 echo "======================================"
